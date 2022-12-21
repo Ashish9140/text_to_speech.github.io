@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Text to Speech convertor</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        textarea {
+            min-width: 60vw;
+            height: 50vh;
+            resize: none;
+            font-size: 20px;
+            padding: 20px;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        .form-floating {
+            display: flex;
+            flex-direction: column;
+        }
+
+        button {
+            background-color: rgb(107, 107, 143);
+            width: 100px;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 5px;
+            cursor: pointer;
+            color: white;
+            border: none;
+            transition: 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: rgb(20, 111, 23);
+        }
+
+        audio {
+            margin-top: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-floating">
+            <textarea placeholder="Enter your text..."></textarea>
+            <button type="button" class="btn">Get Audio</button>
+        </div>
+        <audio src="" controls autoplay class="mt-2"></audio>
+    </div>
+    <script src="/index.js"></script>
+</body>
+
+</html>
